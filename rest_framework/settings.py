@@ -19,7 +19,7 @@ REST framework settings, checking for user settings first, then falling
 back to the defaults.
 """
 from django.conf import settings
-from django.test.signals import setting_changed
+from django.core.signals import setting_changed
 from django.utils.module_loading import import_string
 
 from rest_framework import ISO_8601
